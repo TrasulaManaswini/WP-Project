@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivaStyle Haven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DivaStyle Haven</h1>
+    </header>
+
+    <nav>
+        
+        <a href="#cart">Cart</a>
+    </nav>
+
+    <!-- Add a search bar -->
+    <input type="text" id="search-bar" placeholder="Search products...">
+
+    <main>
+        
+        <div class="product" id="product11">
+            <h2>Flats</h2>
+            <img src="Flats.jpg" alt="Flats" width="300" height="400">
+            <p>Rs450.00</p>
+            <button onclick="addToCart('Flats', 450.00)">Add to Cart</button>
+        </div>
+
+        <div class="product" id="product12">
+            <h2>Heels</h2>
+            <img src="Heels.jpg" alt="Heels" width="300" height="400">
+            <p>Rs550.00</p>
+            <button onclick="addToCart('Heels', 550.00)">Add to Cart</button>
+        </div>
+
+        <div class="product" id="product13">
+            <h2>Juttis</h2>
+            <img src="juttis.jpg" alt="Juttis" width="400" height="400">
+            <p>Rs400.00</p>
+            <button onclick="addToCart('Juttis', 400.00)">Add to Cart</button>
+        </div>
+
+        <div class="product" id="product14">
+            <h2>Sneakers</h2>
+            <img src="Shoes.jpg" alt="Sneakers" width="300" height="400">
+            <p>Rs400.00</p>
+            <button onclick="addToCart('Sneakers', 400.00)">Add to Cart</button>
+        </div>
+
+        <div class="product" id="product15">
+            <h2>Boots</h2>
+            <img src="Boots.jpg" alt="Boots" width="300" height="400">
+            <p>Rs600.00</p>
+            <button onclick="addToCart('Boots', 600.00)">Add to Cart</button>
+        </div>
+
+        <div class="cart" id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                
+            </ul>
+            <p>Total: Rs<span id="cart-total">0.00</span></p>
+        </div> 
+    </main>
+    <footer>
+        <p>info@dsh.com</p>
+        <p>&copy; 2023 DivaStyle Haven. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
