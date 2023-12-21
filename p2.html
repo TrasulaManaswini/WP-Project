@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivaStyle Haven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DivaStyle Haven</h1>
+    </header>
+
+    <nav>
+        
+        <a href="#cart">Cart</a>
+    </nav>
+
+    <!-- Add a search bar -->
+    <input type="text" id="search-bar" placeholder="Search products...">
+
+    <main>
+        <div class="product" id="product6">
+            <h2>Flared Jumpsuit</h2>
+            <img src="Jumpsuit.jpg" alt="Jumpsuit" width="300" height="400">
+            <p>Rs2000.00</p>
+            <button onclick="addToCart('Product 6', 2000.00)">Add to Cart</button>
+        </div>
+
+        <div class="product" id="product7">
+            <h2>White Hoodie</h2>
+            <img src="Hoodie.jpg" alt="Hoodie" width="300" height="400">
+            <p>Rs300.00</p>
+            <button onclick="addToCart('Product 7', 300.00)">Add to Cart</button>
+        </div>
+
+        <div class="product" id="product8">
+            <h2>Designer Kurti</h2>
+            <img src="Kurti.jpg" alt="Kurti" width="300" height="400">
+            <p>Rs1500.00</p>
+            <button onclick="addToCart('Product 8', 1500.00)">Add to Cart</button>
+        </div>
+
+        <div class="product" id="product9">
+            <h2>Indo Western Saree</h2>
+            <img src="Indo Wester Saree.jpg" alt="Saree" width="300" height="400">
+            <p>Rs2500.00</p>
+            <button onclick="addToCart('Indo Western Saree', 2500.00)">Add to Cart</button>
+        </div>
+
+        <div class="product" id="product10">
+            <h2>Indo Western Dress</h2>
+            <img src="Indo Western dress.jpg" alt="Saree" width="400" height="400">
+            <p>Rs2000.00</p>
+            <button onclick="addToCart('Indo Western Dress', 2000.00)">Add to Cart</button>
+        </div>
+
+        <div class="cart" id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                
+            </ul>
+            <p>Total: Rs<span id="cart-total">0.00</span></p>
+        </div> 
+    </main>
+    <footer>
+        <p>info@dsh.com</p>
+        <p>&copy; 2023 DivaStyle Haven. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
