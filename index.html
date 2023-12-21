@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivaStyle Haven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DivaStyle Haven</h1>
+    </header>
+
+    <!-- Add a search bar -->
+    <input type="text" id="search-bar" placeholder="Search products...">
+
+    <main>
+        <div class="shop-section">
+            <div class="box1 box">
+                <div class="box-content">
+                    <h2>Jewellery</h2>
+                    <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+                    <p id="see-more-link1">See more</p>
+                </div>
+            </div>
+            <div class="box2 box">
+                <div class="box-content">
+                    <h2>Outfits</h2>
+                    <div class="box-img" style="background-image: url('Outfits.png');"></div>
+                    <p id="see-more-link2">See more</p>
+                </div>
+            </div>
+            <div class="box3 box">
+                <div class="box-content">
+                    <h2>Footware</h2>
+                    <div class="box-img" style="background-image: url('Footwear.jpg');"></div>
+                    <p id="see-more-link3">See more</p>
+                </div>
+            </div>
+            <div class="box4 box">
+                <div class="box-content">
+                    <h2>Skin Care</h2>
+                    <div class="box-img" style="background-image: url('Skin care.jpg');"></div>
+                    <p id="see-more-link4">See more</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>info@dsh.com</p>
+        <p>&copy; 2023 DivaStyle Haven. All rights reserved.</p>
+        <!-- Contact Us Section -->
+        <div class="contact-us" id="contactUsForm" style="display: none;">
+            <h3>Contact Us</h3>
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+        </div>
+         <!-- Button to reveal the contact form -->
+    <button onclick="showContactForm()">Contact Us</button>
+
+    <div id="contactForm">
+        <form id="feedbackForm" onsubmit="submitForm(); return false;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="notification">Your feedback is submitted!</div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
